@@ -1,5 +1,3 @@
-const { assert } = require("console");
-
 // assertEqual function copied from assertEqual.js
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
