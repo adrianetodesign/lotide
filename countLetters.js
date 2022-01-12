@@ -7,6 +7,15 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function() {
-
+const countLetters = function(strInput) {
+  let results = {};
+  for (keyChar of strInput) {
+    if (keyChar === ' ') {
+      continue;
+    } else if (results[keyChar]) {
+      results[keyChar] += 1;
+    } else {
+      results[keyChar] = 1;
+    }
+  }
 };
