@@ -24,12 +24,12 @@ const without = function(source, itemsToRemove) {
   let outputArr = source.slice();
   for (let i = 0; i < itemsToRemove.length; i++) {
     let outIndex = outputArr.indexOf(itemsToRemove[i]);
-      if (outIndex > -1) {
-        outputArr.splice(outIndex, 1);
-      }
+    if (outIndex > -1) {
+      outputArr.splice(outIndex, 1);
     }
-    return outputArr;
   }
+  return outputArr;
+};
 
 // Example array given on assignment page.
 const words = ["hello", "world", "lighthouse"];
@@ -39,5 +39,5 @@ assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 const nums = [8, 6, 7, 5, 3, 0, 9];
 // Check to ensure multiple elements are removed from the array, and returned as a different array.
-assertArraysEqual(without(nums,[3, 5, 9]), [8, 6, 7, 0])
+assertArraysEqual(without(nums,[3, 5, 9]), [8, 6, 7, 0]);
 assertArraysEqual(nums, [8, 6, 7, 5, 3, 0, 9]);
