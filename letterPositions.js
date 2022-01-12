@@ -33,3 +33,14 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
+
+let results1 = letterPositions("hello");;
+let results2 = letterPositions("drink deep and descend");
+
+assertArraysEqual(results1.h, [0]);
+assertArraysEqual(results1.e, [1]);
+assertArraysEqual(results1.l, [2,3]);
+assertArraysEqual(results1.o, [4]);
+
+assertArraysEqual(results2.d, [0, 6, 13, 15, 21]);
+assertArraysEqual(results2.r, [1]);
