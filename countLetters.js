@@ -18,4 +18,7 @@ const countLetters = function(strInput) {
       results[keyChar] = 1;
     }
   }
+  return results;
 };
+
+console.log(countLetters("Adrian"));
