@@ -21,12 +21,10 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 const without = function(source, itemsToRemove) {
+  // .slice() a necessary method to copy the array, and not reference the source array.
   let outputArr = source.slice();
   for (let i = 0; i < itemsToRemove.length; i++) {
-    let outIndex = outputArr.indexOf(itemsToRemove[i]);
-    if (outIndex > -1) {
-      outputArr.splice(outIndex, 1);
-    }
+    outputArr = outputArr.filter(val => val !== itemsToRemove[i]);
   }
   return outputArr;
 };
@@ -41,3 +39,6 @@ const nums = [8, 6, 7, 5, 3, 0, 9];
 // Check to ensure multiple elements are removed from the array, and returned as a different array.
 assertArraysEqual(without(nums,[3, 5, 9]), [8, 6, 7, 0]);
 assertArraysEqual(nums, [8, 6, 7, 5, 3, 0, 9]);
+
+const nums2 = [5, 5, 5, 4];
+assertArraysEqual(without(nums2,[5]), [4]);
