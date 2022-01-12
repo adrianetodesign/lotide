@@ -7,6 +7,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = fucntion() {
-  
-}
+const countLetters = function() {
+
+};
