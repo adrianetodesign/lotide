@@ -20,5 +20,8 @@ const countLetters = function(strInput) {
   }
   return results;
 };
+let results1 = countLetters("drink deep and descend");
 
-console.log(countLetters("Adrian"));
+assertEqual(results1.d, 5);
+assertEqual(results1.e, 4);
+assertEqual(results1.i, 1);
