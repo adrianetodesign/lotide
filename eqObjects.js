@@ -35,22 +35,9 @@ const eqObjects = function(object1, object2) {
       if (!Array.isArray(object2[key])) {
         // If the same key in object2 is NOT an array, returns false.
         return false;
-      } else if (object1[key].length !== object2[key].length) {
-        /*
-        If the length of the key array in object1 is NOT equal
-        to the key array in object2, return false.
-        */
+      } else if (!eqArrays(object1[key], object2[key])) {
+        // If eqArrays returns false, return false.
         return false;
-      } else {
-        for (let i = 0; i < object1[key].length; i++) {
-          if (object1[key][i] !== object2[key][i]) {
-            /*
-            If the element in object1 key array at index i is NOT equal
-            to the element in object2 key array at index i, return false.
-            */
-            return false;
-          }
-        }
       }
     } else if (object1[key] !== object2[key]){
       // If the value at object1[key] is NOT equal to object2[key], return false.
