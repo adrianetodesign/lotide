@@ -8,6 +8,8 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKeyByValue = function(objectInput, value) {
+  // Loops and checks if any values in object keys match given value. Then returns the key.
+  // Else, returns undefined.
   for (let key in objectInput) {
     if (objectInput[key] === value) {
       return key;
