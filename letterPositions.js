@@ -21,14 +21,19 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 const letterPositions = function(sentence) {
+  // results object
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
+    // Checks for ' ' in string. if found, continues to next iteration.
     if (sentence[i] === ' ') {
       continue;
     }
+    // Checks if the letter key already exists in results. If not, adds
+    // a key with the value set as an empty array.
     if (!results[sentence[i]]) {
       results[sentence[i]] = [];
     }
+    // Pushes the index to the matching key array.
     results[sentence[i]].push(i);
   }
   return results;
