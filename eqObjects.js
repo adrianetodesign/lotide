@@ -30,7 +30,7 @@ const eqObjects = function(object1, object2) {
     if (!object2[key]) {
       // Check if the key in object1 exists in object2. If not, return false.
       return false;
-    } else if (Array.isArray(object1[key])){
+    } else if (Array.isArray(object1[key])) {
       // Check if the key is an array.
       if (!Array.isArray(object2[key])) {
         // If the same key in object2 is NOT an array, returns false.
@@ -39,7 +39,7 @@ const eqObjects = function(object1, object2) {
         // If eqArrays returns false, return false.
         return false;
       }
-    } else if (object1[key] !== object2[key]){
+    } else if (object1[key] !== object2[key]) {
       // If the value at object1[key] is NOT equal to object2[key], return false.
       return false;
     }
