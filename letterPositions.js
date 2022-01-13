@@ -13,11 +13,11 @@ const eqArrays = function(arr1, arr2) {
 
 //Copied from assertArraysEqual.js
 const assertArraysEqual = function(array1, array2) {
+  let assertion = `🛑 Assertion failed: [${array1}] !==  [${array2}]`;
   if (eqArrays(array1, array2)) {
-    console.log(`✅ Assertion passed: [${array1}] ===  [${array2}]`);
-  } else {
-    console.log(`🛑 Assertion failed: [${array1}] !==  [${array2}]`);
+    assertion = `✅ Assertion passed: [${array1}] ===  [${array2}]`;
   }
+  console.log(assertion);
 };
 
 const letterPositions = function(sentence) {
@@ -40,6 +40,7 @@ const letterPositions = function(sentence) {
 };
 
 let results1 = letterPositions("hello");
+
 let results2 = letterPositions("drink deep and descend");
 
 assertArraysEqual(results1.h, [0]);
