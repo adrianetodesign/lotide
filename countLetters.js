@@ -12,11 +12,11 @@ const countLetters = function(strInput) {
   for (let keyChar of strInput) {
     if (keyChar === ' ') {
       continue;
-    } else if (results[keyChar]) {
-      results[keyChar] += 1;
-    } else {
-      results[keyChar] = 1;
     }
+    if (!results[keyChar]) {
+      results[keyChar] = 0;
+    }
+    results[keyChar] += 1;
   }
   return results;
 };
