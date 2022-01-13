@@ -53,7 +53,9 @@ const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 const abc = { a: "1", b: "2", c: "3" };
 
+// Assertion should pass.
 assertObjectEqual(ab, {a: "1", b: "2"});
 assertObjectEqual(ab, ba);
+// Assertion should fail.
 assertObjectEqual(ab, {a: "1", c: "2"});
 assertObjectEqual(ab, abc);
