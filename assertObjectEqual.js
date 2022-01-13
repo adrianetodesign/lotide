@@ -43,9 +43,9 @@ const assertObjectEqual = function(actual, expected) {
   // inspect is just here to help us see the object printed to the console in a string.
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {
-    console.log(`✅ Assertion passed: [${inspect(actual)}] ===  [${inspect(expected)}]`);
+    console.log(`✅ Assertion passed: ${inspect(actual)} ===  ${inspect(expected)}`);
   } else {
-    console.log(`🛑 Assertion failed: [${inspect(actual)}] !==  [${inspect(expected)}]`);
+    console.log(`🛑 Assertion failed: ${inspect(actual)} !==  ${inspect(expected)}`);
   }
 };
 
