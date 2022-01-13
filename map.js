@@ -20,7 +20,7 @@ const assertArraysEqual = function(array1, array2) {
   console.log(assertion);
 };
 
-const map = function(arr, callback) { 
+const map = function(arr, callback) {
   const results = [];
   for (let item of arr) {
     results.push(callback(item));
