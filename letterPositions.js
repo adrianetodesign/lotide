@@ -25,16 +25,16 @@ const letterPositions = function(sentence) {
   for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] === ' ') {
       continue;
-    } else if (results[sentence[i]]){
-      results[sentence[i]].push(i);
-    } else {
-      results[sentence[i]] = [i];
     }
+    if (!results[sentence[i]]) {
+      results[sentence[i]] = [];
+    }
+    results[sentence[i]].push(i);
   }
   return results;
 };
 
-let results1 = letterPositions("hello");;
+let results1 = letterPositions("hello");
 let results2 = letterPositions("drink deep and descend");
 
 assertArraysEqual(results1.h, [0]);
