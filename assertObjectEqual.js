@@ -22,12 +22,14 @@ const eqObjects = function(object1, object2) {
     if (!object2[key]) {
       // Check if the key in object1 exists in object2. If not, return false.
       return false;
-    } else if (Array.isArray(object1[key])) {
+    } 
+    if (Array.isArray(object1[key])) {
       // Check if the key is an array.
       if (!Array.isArray(object2[key])) {
         // If the same key in object2 is NOT an array, returns false.
         return false;
-      } else if (!eqArrays(object1[key], object2[key])) {
+      }
+      if (!eqArrays(object1[key], object2[key])) {
         // If eqArrays returns false, return false.
         return false;
       }
