@@ -1,5 +1,3 @@
-const { builtinModules } = require("module");
-
 // assertEqual function copied from assertEqual.js
 const assertEqual = function(actual, expected) {
   let assertion = `🛑 Assertion failed: ${actual} !==  ${expected}`;
