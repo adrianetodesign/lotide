@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@adrianetodesign/lotide",
   "version": "1.0.0",
   "description": "Week 1 Project at Lighthouse Labs",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/adrianetodesign/lotide.git"
   },
-  "author": "Adrian To",
+  "author": "Adrian To adrianetodesign@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/adrianetodesign/lotide/issues"
