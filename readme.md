@@ -39,3 +39,5 @@ The following functions are currently implemented:
 * `findKey(object, callback)`: Returns the first key in a given object that fulfills the conditions of the callback function.
 * `letterPositions(string)`: Returns an object with the index for each letter. Each letter is represented as a key of the object, with the indices stored in an array as it's value.
 * `map(array, callback)`: Returns an array with the given callback function applied to each item of the array.
+* `takeUntil(array, callback)`: Returns an array with the given array sliced until the given callback function returns a truthy value.
+* `without(array1, array2)`: Returns the first given array with all values in the second given array removed.
