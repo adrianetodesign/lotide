@@ -12,6 +12,8 @@ const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
 const letterPositions = require('./letterPositions');
 const map = require('./map');
+const takeUntil = require('./takeUntil');
+const without = require('./without');
 
 module.exports = {
   head,
@@ -27,5 +29,7 @@ module.exports = {
   findKey,
   findKeyByValue,
   letterPositions,
-  map
+  map,
+  takeUntil,
+  without
 };

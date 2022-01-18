@@ -12,7 +12,7 @@ const eqArrays = function(arr1, arr2) {
 };
 
 // Copied from assertArraysEqual.js
-cconst assertArraysEqual = function(array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   let assertion = `🛑 Assertion failed: [${array1}] !==  [${array2}]`;
   if (eqArrays(array1, array2)) {
     assertion = `✅ Assertion passed: [${array1}] ===  [${array2}]`;
@@ -42,3 +42,5 @@ assertArraysEqual(nums, [8, 6, 7, 5, 3, 0, 9]);
 
 const nums2 = [5, 5, 5, 4];
 assertArraysEqual(without(nums2,[5]), [4]);
+
+module.exports = without;
