@@ -37,3 +37,5 @@ assertEqual(findKeyByValue(favoriteMoviesByGenre, "Bladerunner 2049"), "sci_fi")
 assertEqual(findKeyByValue(favoriteMoviesByGenre, "Dune"), "space_opera");
 assertEqual(findKeyByValue(favoriteMoviesByGenre, "Mobile Suit Gundam SEED C.E. 73: STARGAZER"), "anime");
 assertEqual(findKeyByValue(favoriteMoviesByGenre, "Pacific Rim: Uprising"), undefined);
+
+module.exports = findKeyByValue;

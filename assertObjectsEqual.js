@@ -61,3 +61,5 @@ assertObjectsEqual(ab, ba);
 // Assertion should fail.
 assertObjectsEqual(ab, {a: "1", c: "2"});
 assertObjectsEqual(ab, abc);
+
+module.exports = assertObjectsEqual;
